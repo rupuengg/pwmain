@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "project_id": "000",
+      "google_photo_link": "https: //photos.google.com/share/AF1QipOqVR26vlW5HApFeZt8W3jlcpvwAOZjP3jfg62QNyaw62V3GCGwPQftv7YlHyhidA?key=SlpnSHN0UkVKY1gzV2VCaWpGZURjVWc2MGpzWTV3",
+      "title": "First Project",
+      "address": "Gulshan Bellina",
+      "location": "",
+      "default_image": "../assets/images/projects/1/designer_images/001-mb-tv-wr.jpeg",
+      "designer_images": [
+        "../assets/images/projects/1/designer_images/001-mb-tv-wr.jpeg",
+        "../assets/images/projects/1/designer_images/002-mb-tv-door.jpeg",
+        "../assets/images/projects/1/designer_images/003-mb-b-fw.jpeg",
+        "../assets/images/projects/1/designer_images/004-gb-right-side.jpeg",
+        "../assets/images/projects/1/designer_images/005-gb-bed-hydralic.jpeg",
+        "../assets/images/projects/1/designer_images/006-gb-common-pic.jpeg",
+        "../assets/images/projects/1/designer_images/007-sr-bed.jpeg",
+        "../assets/images/projects/1/designer_images/008-sr-studdy-table.jpeg",
+        "../assets/images/projects/1/designer_images/009-k-left-side.jpeg",
+        "../assets/images/projects/1/designer_images/010-k-right-side.jpeg",
+        "../assets/images/projects/1/designer_images/011-l-sofa-wp.jpeg",
+        "../assets/images/projects/1/designer_images/012-l-tv-common-area.jpeg"
+      ],
+      "after_work": []
+    }
+  ]
+}

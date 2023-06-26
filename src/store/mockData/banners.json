@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "img": "../../../assets/images/banner/banner1.jpg"
+    },
+    {
+      "img": "../../../assets/images/banner/banner2.jpg"
+    },
+    {
+      "img": "../../../assets/images/banner/banner3.jpg"
+    },
+    {
+      "img": "../../../assets/images/banner/banner4.jpg"
+    },
+    {
+      "img": "../../../assets/images/banner/banner5.jpg"
+    }
+  ]
+}

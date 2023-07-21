@@ -13,36 +13,35 @@ const BannerList: React.FC<IBannerList> = (props: IBannerList) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    let timer1 = setTimeout(() => {
+    let timer1 = setInterval(() => {
       let newIndex = activeIndex + 1;
       if (newIndex >= banners.length) {
         newIndex = 0;
       }
-      setActiveIndex(newIndex);
+      // setActiveIndex(newIndex);
     }, 2000);
 
     return () => {
       clearTimeout(timer1);
     };
-  }, []);
+  }, [activeIndex]);
 
   return (
     <div className="bannerBox">
-      <div>
-        {
-          banners.map((item: BannerModel, bannerIndex: number) => (
-            <div key={`banner-${bannerIndex}`} className={`bannerItem ${bannerIndex === activeIndex ? 'active' : ''}`}>
-              <div className="slideItem" style={{ backgroundImage: 'url(' + item.img + ')' }}>
-                <div className="siteCss">
-                  <div className="contentBox">
-                    Text
-                  </div>
+      {
+        banners.map((item: BannerModel, bannerIndex: number) => (
+          <div key={`banner-${bannerIndex}`} className={`bannerItem ${bannerIndex === activeIndex ? 'active' : ''}`}>
+            <div className="slideItem">
+              <img src={item.img} />
+              {/* <div className="siteCss">
+                <div className="contentBox">
+                  Text
                 </div>
-              </div>
+              </div> */}
             </div>
-          ))
-        }
-      </div>
+          </div>
+        ))
+      }
     </div>
   );
 }

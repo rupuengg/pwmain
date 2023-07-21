@@ -1,0 +1,71 @@
+@import '../../../../assets/css/common.scss';
+
+.PanacheLayout-footer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+
+  & .bottom {
+    display: block;
+    padding: 20px 0;
+    background-color: get_color(white);
+
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      & li {
+        display: inline-block;
+        line-height: 43.5px;
+
+        &.copyright {
+          color: get_color(black);
+        }
+
+        &.phone a {
+          color: get_color(white_font_color);
+          text-decoration: none;
+        }
+
+        &.email a {
+          color: get_color(white_font_color);
+          text-decoration: none;
+        }
+
+        &.separate {
+          font-size: 0px;
+          margin: 0px 20px -3px;
+          height: 15px;
+          border-right: 1px solid get_color(gray);
+
+          &.no-border {
+            border-right: 0px;
+            margin-right: 0px;
+          }
+        }
+
+        @media (min-width: $breakpointtablet) {
+          letter-spacing: .1em;
+          font-size: 10px;
+          color: get_color(black);
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: .05em;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        &.last {
+          float: right;
+          padding-top: 10px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

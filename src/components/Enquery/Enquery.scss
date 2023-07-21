@@ -8,7 +8,7 @@
     width: 40%;
     flex-direction: column;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpointtablet) {
       width: 100%;
     }
 
@@ -24,7 +24,8 @@
         padding-bottom: 4px;
       }
 
-      & input, & textarea {
+      & input,
+      & textarea {
         display: block;
         width: 100%;
         padding: 10px 0;

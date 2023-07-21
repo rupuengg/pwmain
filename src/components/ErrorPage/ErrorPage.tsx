@@ -1,4 +1,5 @@
 import React from 'react';
+import './ErrorPage.scss';
 
 export interface IErrorPage {
   children?: JSX.Element | JSX.Element[] | string | string[];

@@ -1,13 +1,14 @@
 @import '../../../assets/css/common.scss';
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpointtablet) {
   .offer {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     margin: 0;
 
-    & > section, & > figcaption {
+    &>section,
+    &>figcaption {
       width: 100%;
       float: left;
       flex: 1 0 50%;
@@ -17,7 +18,7 @@
       padding: 1rem;
     }
 
-    & > aside {
+    &>aside {
       box-shadow: 0 2px 4px 0 #000000;
       background-color: #ffffff;
       float: left;
@@ -29,19 +30,19 @@
     & aside .flex nav {
       width: 48%;
     }
-  
+
     & aside .flex section {
       width: 50%;
       margin-left: 2%;
-  
-      & > article {
+
+      &>article {
         flex-direction: column;
       }
     }
   }
 }
 
-@media (min-width: $breakpoint-tablet) {
+@media (min-width: $breakpointtablet) {
   .offer {
     display: block;
     position: relative;
@@ -51,7 +52,7 @@
     &:first-child {
       padding-right: 20px;
 
-      & > aside {
+      &>aside {
         margin: 50px 0;
       }
     }
@@ -59,25 +60,26 @@
     &:last-child {
       padding-left: 20px;
 
-      & > aside {
+      &>aside {
         margin: 50px 0;
       }
     }
 
-    & > section, .offer > figcaption {
+    &>section,
+    .offer>figcaption {
       width: 50%;
       float: left;
     }
-  
-    & > aside .w-full {
+
+    &>aside .w-full {
       width: 100%;
     }
 
-    & > .clear {
+    &>.clear {
       clear: both;
     }
-  
-    & > aside {
+
+    &>aside {
       height: 420px;
       box-shadow: 0 2px 4px 0 #000000;
       background-color: #ffffff;
@@ -85,8 +87,8 @@
       padding-bottom: 0;
       display: block;
     }
-  
-    & aside .flex nav, 
+
+    & aside .flex nav,
     & aside .flex section {
       width: 50%;
     }
@@ -106,14 +108,14 @@
   display: block;
 }
 
-.navBar > p {
+.navBar>p {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   height: 36px;
   line-height: 20px;
 }
 
-.navBar > p.active {
+.navBar>p.active {
   padding-left: 40px;
 }
 
@@ -133,7 +135,7 @@
   padding: 0;
 }
 
-.rightbox ul li{
+.rightbox ul li {
   display: block;
   margin: 0;
   padding: 0.5rem 0;

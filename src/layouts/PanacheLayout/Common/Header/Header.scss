@@ -1,94 +1,14 @@
-@import '../../../assets/css/common.scss';
+@import '../../../../assets/css/common.scss';
 
-header {
-  top: 0;
-  left: 0;
+.PanacheLayout-mainHeader {
   width: 100%;
   z-index: 1;
   background-color: get_color(white);
-
-  & .topHeader {
-    display: block;
-
-    & .contactInfo {
-      display: flex;
-      margin: 0;
-      list-style: none;
-
-      @media (max-width: $breakpointtablet) {
-        padding: 4px 0;
-      }
-
-      @media (min-width: $breakpointtablet) {
-        float: right;
-        padding: 10px 0;
-      }
-
-      &>li {
-        margin: 0;
-        padding: 0;
-
-        &:last-child {
-          text-align: right;
-          margin-left: 20px;
-        }
-
-        & span {
-          font-weight: 600;
-          color: get-color(white_font_color);
-          font-size: 10px;
-        }
-
-        & a {
-          color: get-color(white_font_color);
-          font-size: 8px;
-          text-decoration: none;
-          font-weight: 400;
-          font-style: normal;
-        }
-
-        @media (max-width: $breakpointtablet) {
-          & {
-            flex: 0 0 50%;
-
-            &:last-child {
-              margin-left: 0;
-            }
-          }
-
-          & span {
-            font-size: 10px;
-          }
-
-          & a {
-            font-size: 10px;
-          }
-        }
-
-        @media (min-width: $breakpointtablet) {
-          & span {
-            font-size: 12px;
-          }
-
-          & a {
-            font-size: 12px;
-          }
-        }
-
-        &:last-child {
-          float: right;
-        }
-      }
-    }
-  }
+  position: relative;
 
   &>.lowerHeader {
     display: block;
     position: relative;
-
-    @media (min-width: $breakpointtablet) {
-      margin: 20px 0;
-    }
 
     & .navBar {
       display: flex;
@@ -107,6 +27,7 @@ header {
             cursor: pointer;
             border: 0;
             padding: 15px 0;
+            line-height: 73px;
             background: transparent;
 
             & svg {
@@ -119,23 +40,30 @@ header {
 
       & .logo-box {
         flex: 0 0 26%;
-        // padding: 16px 0 0 0;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 20px 0;
 
         @media (max-width: $breakpointtablet) {
           flex: 0 0 90%;
           padding: 15px 0;
-          height: 32px;
         }
 
         & a {
           text-decoration: none;
           color: get_color(white_font_color);
+
+          & img {
+            height: 40px;
+          }
         }
       }
     }
 
     & .navMenu {
       flex: 1;
+      margin: 20px 0;
 
       @media (max-width: $breakpointtablet) {
         & .navigation {
@@ -146,7 +74,7 @@ header {
           position: absolute;
           left: 0;
           right: 0;
-          top: 62px;
+          top: 100px;
           background-color: get_color(nav_menu_font_color_hover);
           z-index: 4;
 
@@ -179,6 +107,12 @@ header {
             &:last-child a {
               padding-right: 0;
             }
+
+            &:hover {
+              & ul {
+                display: block;
+              }
+            }
           }
 
           &.open {
@@ -201,19 +135,20 @@ header {
           &>li {
             margin: 0;
             display: inline-block;
-            padding: 23px 15px;
+            padding: 10px 15px;
+            position: relative;
 
-            &>a {
+            & a {
               display: block;
               color: get_color(nav_menu_font_color);
-              font-size: 14px;
+              font-size: 12px;
               text-decoration: none;
               font-weight: 400;
               font-style: normal;
               text-transform: uppercase;
               letter-spacing: .1em;
               border-bottom: 1px solid transparent;
-              padding: 0 0 2px 0;
+              padding: 5px 0 2px 0;
 
               &:hover,
               &.active {
@@ -228,6 +163,23 @@ header {
 
             &:last-child {
               padding-right: 0;
+            }
+
+            & ul {
+              display: none;
+              position: absolute;
+              margin: 0;
+              padding: 0 0 0 15px;
+              list-style: none;
+              top: 35px;
+              left: 0px;
+              width: 200px;
+            }
+
+            &:hover {
+              & ul {
+                display: block;
+              }
             }
           }
         }

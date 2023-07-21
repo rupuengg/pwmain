@@ -7,7 +7,7 @@
     display: flex;
     padding: 50px 0 0;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpointtablet) {
       flex-direction: column;
     }
   }

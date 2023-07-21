@@ -1,0 +1,11 @@
+.error-page {
+  display: block;
+
+  & h1 {
+    display: block;
+  }
+
+  & p {
+    display: block;
+  }
+}

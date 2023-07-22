@@ -3,10 +3,9 @@
 
   & .PanacheLayout-container {
     height: calc(100% - 167px);
-    position: absolute;
     width: 100%;
+    padding: 83.5px 0;
     display: block;
-    top: 83.5px;
 
     & .leftBox {
       position: fixed;

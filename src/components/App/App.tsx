@@ -1,10 +1,11 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Layout from '../../layouts';
-import Home from '../Home';
+import Home from '../../pages/Home';
 import ErrorPage from '../ErrorPage';
 import { E_Layout } from '../../layouts/Layout';
-import { AboutUs } from '../AboutUs/AboutUs';
+import { AboutUs } from '../../pages/AboutUs/AboutUs';
+import { Services } from '../../pages/Services';
 
 export interface IApp { }
 
@@ -13,8 +14,10 @@ export const App: React.FC<IApp> = (props: IApp) => {
     <Router>
       <Layout layout={E_Layout.PANACHE}>
         <Routes>
+          <Route path="/" element={<Navigate to="/home" />}></Route>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Layout>

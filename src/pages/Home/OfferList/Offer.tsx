@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Offer.scss';
-import { OfferModel } from '../../models/OfferModel';
-import { OfferOptionModel } from '../../models/OfferModel';
+import { OfferModel } from '../../../models/OfferModel';
+import { OfferOptionModel } from '../../../models/OfferModel';
 
 interface IOffer {
   offer: OfferModel;

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import BannerList from '../BannerList';
-import OfferList from '../OfferList';
+import BannerList from './BannerList';
+import OfferList from './OfferList';
 // import Enquery from '../Enquery';
 import './Home.scss';
 // import project1d1 from '../../../assets/images/projects/1/designer_images/001-mb-tv-wr.jpeg';
@@ -12,7 +12,7 @@ const Home = () => {
       <BannerList />
 
       {/* Offer list */}
-      {/* <OfferList /> */}
+      <OfferList />
 
       {/* Project list - Start */}
       {/* <div className="siteCss">

@@ -1,7 +1,7 @@
 .page-header-box {
   & .parallax-section {
     width: 100%;
-    padding: 200px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     z-index: 0;
@@ -22,7 +22,7 @@
       width: 110%;
       left: -5%;
       height: 115%;
-      top: -30%;
+      top: -50%;
       background-attachment: scroll !important;
       background-position: center;
     }
@@ -33,6 +33,7 @@
       margin: 0 auto;
       position: relative;
       z-index: 2;
+      text-align: center;
     }
   }
 }

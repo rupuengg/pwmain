@@ -26,5 +26,5 @@ export const Layout: React.FC<ILayout> = (props: ILayout) => {
     }
   }, [layout, children]);
 
-  return <div className={'layout'} style={{ width: '100%', height: '100vh' }}>{Layout}</div>
+  return <div className={'layout'}>{Layout}</div>
 }

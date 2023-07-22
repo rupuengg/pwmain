@@ -49,6 +49,18 @@
     flex: 1 1 50%;
     margin: 0;
 
+    & figcaption {
+
+
+      & p,
+      & h3 {
+        font-size: 18px;
+        color: get_color(black);
+        font-style: normal;
+        letter-spacing: 2px;
+      }
+    }
+
     &:first-child {
       padding-right: 20px;
 
@@ -113,6 +125,11 @@
   background-size: 20px 20px;
   height: 36px;
   line-height: 20px;
+
+  font-size: 12px;
+  color: get_color(black);
+  font-style: normal;
+  letter-spacing: 2px;
 }
 
 .navBar>p.active {
@@ -139,4 +156,9 @@
   display: block;
   margin: 0;
   padding: 0.5rem 0;
+
+  font-size: 12px;
+  color: get_color(black);
+  font-style: normal;
+  letter-spacing: 2px;
 }

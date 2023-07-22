@@ -1,4 +1,4 @@
-@import '../../assets/css/common.scss';
+@import '../../../assets/css/common.scss';
 
 .bannerBox {
   display: block;
@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $breakpointtablet) {
-    height: 100%;
+    height: calc(100vh - 167px);
   }
 
   & .siteCss {

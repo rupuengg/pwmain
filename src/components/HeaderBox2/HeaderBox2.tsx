@@ -1,26 +1,17 @@
 import './HeaderBox2.scss';
 
 export interface IHeaderBox2 {
-  shadowImage: string;
-  title: string;
+  leftImage: string;
+  children: JSX.Element | JSX.Element[];
 }
 
 export const HeaderBox2: React.FC<IHeaderBox2> = (props: IHeaderBox2) => {
-  const { shadowImage, title } = props;
+  const { leftImage, children } = props;
 
   return <div className="page-header-box-2">
-    <section className="parallax-section">
-      <div className="overlay"></div>
-      <div className="box" data-top-bottom="transform: translateY(200px);" data-bottom-top="transform: translateY(-200px);" style={{ transform: 'translateY(117.371px)', backgroundImage: `url("${shadowImage}")` }}></div>
-      <div className="container">
-        <div className="row">
-          <h2>{title}</h2>
-          <div className="separator-image">
-            <img decoding="async" className="alignnone size-full wp-image-13" src={'../assets/images/separator1.png'} alt="separator" width="42" height="8" />
-          </div>
-        </div>
-      </div>
-      <a className="custom-scroll-link sect-scroll" href="#sec1"><i className="fa fa-angle-double-down"></i></a>
+    <section id="sec1" className='parallax-section'>
+      <div className="box" data-top-bottom="transform: translateY(200px);" data-bottom-top="transform: translateY(-200px);" style={{ backgroundImage: `url("${leftImage}")` }}></div>
+      <div className="container">{children}</div>
     </section>
   </div>;
 }

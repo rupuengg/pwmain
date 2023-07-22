@@ -4,7 +4,7 @@
   width: 100%;
   z-index: 1;
   background-color: get_color(white);
-  position: relative;
+  position: fixed;
 
   &>.lowerHeader {
     display: block;

@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 import './OfferList.scss';
 import Offer from './Offer';
 import React from 'react';
-import { IApplicationState } from '../../store/reducers';
-import { OfferModel } from '../../models/OfferModel';
+import { IApplicationState } from '../../../store/reducers';
+import { OfferModel } from '../../../models/OfferModel';
 
 interface IOfferList {
   offers: OfferModel[];

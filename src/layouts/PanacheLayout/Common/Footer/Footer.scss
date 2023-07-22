@@ -50,12 +50,10 @@
         }
 
         @media (min-width: $breakpointtablet) {
-          letter-spacing: .1em;
           font-size: 10px;
           color: get_color(black);
           font-weight: 400;
           font-style: normal;
-          letter-spacing: .05em;
           text-transform: uppercase;
           letter-spacing: 2px;
         }

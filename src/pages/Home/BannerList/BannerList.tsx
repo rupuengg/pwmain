@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { BannerModel } from '../../models/BannerModel';
-import { IApplicationState } from '../../store/reducers';
+import { BannerModel } from '../../../models/BannerModel';
+import { IApplicationState } from '../../../store/reducers';
 import './BannerList.scss';
 
 interface IBannerList {

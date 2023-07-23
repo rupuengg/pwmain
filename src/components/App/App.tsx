@@ -6,6 +6,7 @@ import ErrorPage from '../ErrorPage';
 import { E_Layout } from '../../layouts/Layout';
 import { AboutUs } from '../../pages/AboutUs/AboutUs';
 import { Services } from '../../pages/Services';
+import { Contact } from '../../pages/Contact';
 
 export interface IApp { }
 
@@ -18,6 +19,7 @@ export const App: React.FC<IApp> = (props: IApp) => {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Layout>

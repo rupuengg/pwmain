@@ -1,3 +1,5 @@
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -10,6 +12,12 @@ module.exports = {
     port: 3000,
     compress: true,
     historyApiFallback: true,
+    contentBase: path.resolve(__dirname, '..', 'public'),
+  },
+  output: {
+    path: path.join(__dirname, '../dist'),
+    filename: 'bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -56,12 +64,22 @@ module.exports = {
   },
   target: ['web', 'es5'],
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '..', 'public', 'index.html'),
-      // filename: './index.html',
-      // favicon: './public/icons8-home-26.png',
-      // manifest: './public/manifest.json',
-      // base: './',
+      filename: './index.html',
+      inject: true,
+      favicon: './public/icons8-home-26.png',
+      manifest: './public/manifest.json',
+      base: './',
     }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.join(__dirname, '../public'),
+    //       to: path.join(__dirname, '../dist')
+    //     },
+    //   ],
+    // }),
   ],
 };

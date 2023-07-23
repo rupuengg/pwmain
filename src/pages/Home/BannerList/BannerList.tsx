@@ -11,20 +11,41 @@ interface IBannerList {
 const BannerList: React.FC<IBannerList> = (props: IBannerList) => {
   const { banners } = props;
   const [activeIndex, setActiveIndex] = useState(0);
+  let timer1: any;
 
   useEffect(() => {
-    let timer1 = setInterval(() => {
+    timer1 = setInterval(() => {
       let newIndex = activeIndex + 1;
       if (newIndex >= banners.length) {
         newIndex = 0;
       }
-      // setActiveIndex(newIndex);
+      setActiveIndex(newIndex);
     }, 2000);
 
     return () => {
       clearTimeout(timer1);
     };
   }, [activeIndex]);
+
+  const handleLeftClick = () => {
+    if (timer1) clearTimeout(timer1);
+
+    let newIndex = activeIndex - 1;
+    if (newIndex < 0) {
+      newIndex = banners.length - 1;
+    }
+    setActiveIndex(newIndex);
+  }
+
+  const handleRightClick = () => {
+    if (timer1) clearTimeout(timer1);
+
+    let newIndex = activeIndex + 1;
+    if (newIndex > banners.length - 1) {
+      newIndex = 0;
+    }
+    setActiveIndex(newIndex);
+  }
 
   return (
     <div className="bannerBox">
@@ -42,6 +63,12 @@ const BannerList: React.FC<IBannerList> = (props: IBannerList) => {
           </div>
         ))
       }
+      <div className='arrow'>
+        <ul>
+          <li onClick={handleLeftClick}>&#8672;</li>
+          <li onClick={handleRightClick}>&#8674;</li>
+        </ul>
+      </div>
     </div>
   );
 }

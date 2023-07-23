@@ -4,9 +4,7 @@ const Enquery = () => {
   return (
     <div className="enquire">
       <div className="siteCss" style={{ 'marginLeft': '-32px' }}>
-        <iframe title="PanacheWorld" id="quote_form" className="quote_form"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdT00BAWnV5tg6VYpnHb2Fb9hrrcKE9yYjpxOvgWPWNykcG9A/viewform?embedded=true"
-          width="640" height="960">Loading…</iframe>
+        <iframe title="PanacheWorld" id="quote_form" className="quote_form" src="https://docs.google.com/forms/d/e/1FAIpQLSdPharPv_A5_XryCnkNpM-3kOELA9BLvnGF5sbdVTYcfW4ZyA/viewform?embedded=true" width="640" height="1000">Loading…</iframe>
         {/* <div className="formBox">
           <h1>Enquire for services</h1>
           <div className="formItem">

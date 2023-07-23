@@ -1,7 +1,13 @@
-@import '../../../assets/css/common.scss';
+@import '../../assets/css/common.scss';
 
 .enquire {
   display: block;
+
+  & iframe {
+    margin: 50px auto 0;
+    width: 100%;
+    border: 0;
+  }
 
   & .formBox {
     display: flex;

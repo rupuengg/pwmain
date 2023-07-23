@@ -4,6 +4,36 @@
   display: block;
   position: relative;
 
+  & div.arrow {
+    position: absolute;
+    right: -38px;
+    bottom: 0px;
+
+    & ul,
+    & li {
+      margin: 0;
+      padding: 0;
+      display: block;
+      background-color: get_color(nav_menu_font_color);
+      color: get_color(white);
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    & ul {
+      border-left: 2px solid get_color(white);
+    }
+
+    & li {
+      padding: 10px;
+      cursor: pointer;
+
+      &:first-child {
+        border-bottom: 2px solid get_color(white);
+      }
+    }
+  }
+
   @media (max-width: $breakpointtablet) {
     height: 300px;
   }

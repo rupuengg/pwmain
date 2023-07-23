@@ -1,3 +1,6 @@
+export * from './Enquery';
 import Enquery from './Enquery';
 
-export default Enquery;
+export {
+  Enquery
+};

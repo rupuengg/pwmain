@@ -12,7 +12,7 @@ module.exports = {
     port: 3000,
     compress: true,
     historyApiFallback: true,
-    contentBase: path.resolve(__dirname, '..', 'public'),
+    // contentBase: path.resolve(__dirname, '..', 'public'),
   },
   output: {
     path: path.join(__dirname, '../dist'),
@@ -73,13 +73,17 @@ module.exports = {
       manifest: './public/manifest.json',
       base: './',
     }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.join(__dirname, '../public'),
-    //       to: path.join(__dirname, '../dist')
-    //     },
-    //   ],
-    // }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, '../public/assets'),
+          to: path.join(__dirname, '../dist/assets')
+        },
+        {
+          from: path.join(__dirname, '../public/images'),
+          to: path.join(__dirname, '../dist/images')
+        },
+      ],
+    }),
   ],
 };

@@ -20,7 +20,7 @@ const BannerList: React.FC<IBannerList> = (props: IBannerList) => {
         newIndex = 0;
       }
       setActiveIndex(newIndex);
-    }, 2000);
+    }, 3000);
 
     return () => {
       clearTimeout(timer1);

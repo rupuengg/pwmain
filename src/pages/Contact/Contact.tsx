@@ -1,4 +1,4 @@
-import { Enquery } from '../../components/Enquery';
+import { Enquery } from './Enquery';
 import { HeaderBox } from '../../components/HeaderBox/HeaderBox';
 import './Contact.scss';
 

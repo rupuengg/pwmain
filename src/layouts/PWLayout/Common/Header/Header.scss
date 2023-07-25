@@ -16,11 +16,11 @@
       margin: 0;
       list-style: none;
 
-      @media (max-width: $breakpoint-tablet) {
+      @media (max-width: $breakpointtablet) {
         padding: 4px 0;
       }
 
-      @media (min-width: $breakpoint-tablet) {
+      @media (min-width: $breakpointtablet) {
         float: right;
         padding: 10px 0;
       }
@@ -48,7 +48,7 @@
           font-style: normal;
         }
 
-        @media (max-width: $breakpoint-tablet) {
+        @media (max-width: $breakpointtablet) {
           & {
             flex: 0 0 50%;
 
@@ -66,7 +66,7 @@
           }
         }
 
-        @media (min-width: $breakpoint-tablet) {
+        @media (min-width: $breakpointtablet) {
           & span {
             font-size: 12px;
           }
@@ -95,7 +95,7 @@
         display: none;
       }
 
-      @media (max-width: $breakpoint-tablet) {
+      @media (max-width: $breakpointtablet) {
         & .navbar-header {
           float: right;
           display: block;
@@ -122,7 +122,7 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        @media (max-width: $breakpoint-tablet) {
+        @media (max-width: $breakpointtablet) {
           flex: 0 0 90%;
           padding: 15px 0;
         }
@@ -138,7 +138,7 @@
       flex: 1;
       margin: 20px 0;
 
-      @media (max-width: $breakpoint-tablet) {
+      @media (max-width: $breakpointtablet) {
         & .navigation {
           display: none;
           margin: 0;
@@ -194,7 +194,7 @@
         }
       }
 
-      @media (min-width: $breakpoint-tablet) {
+      @media (min-width: $breakpointtablet) {
         & .navigation {
           margin: 0;
           padding: 0;

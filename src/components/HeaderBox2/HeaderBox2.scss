@@ -1,0 +1,51 @@
+.page-header-box-2 {
+  margin-top: 40px;
+
+  & .parallax-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+
+    & .box,
+    & .container {
+      max-height: 100%;
+      overflow-y: auto;
+      width: 50%;
+    }
+
+    & .box {
+      width: 40%;
+      background-attachment: scroll !important;
+      background-position: center;
+      background-size: 100% 100%;
+    }
+
+    & .container {
+      width: 60%;
+      z-index: 0;
+      background-color: #936141;
+      color: #ffffff;
+      padding: 30px;
+
+      & h2,
+      & h3,
+      & p {
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: get_color(black);
+        font-style: normal;
+        letter-spacing: 2px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

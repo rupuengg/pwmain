@@ -1,0 +1,14 @@
+@import '../../../assets/css/common.scss';
+
+.offers {
+  display: flex;
+
+  & .article {
+    display: flex;
+    padding: 50px 0 0;
+
+    @media (max-width: $breakpointtablet) {
+      flex-direction: column;
+    }
+  }
+}

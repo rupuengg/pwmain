@@ -1,0 +1,41 @@
+@import '../../assets/css/common.scss';
+
+.PanacheWorld-about-us {
+  & .box-counter {
+    display: flex;
+    margin-top: 40px;
+
+    &>div {
+      width: 25%;
+      padding: 50px 0;
+      border-right: 1px solid get_color(gray);
+      justify-content: center;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      flex-direction: column;
+
+      &:last-child {
+        border-right: 0px;
+      }
+
+      & h2,
+      & p {
+        margin: 0px;
+        padding: 0px;
+        text-transform: uppercase;
+      }
+
+      & h2 {
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: 6px;
+      }
+
+      & p {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+}

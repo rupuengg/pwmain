@@ -15,11 +15,11 @@ header {
       margin: 0;
       list-style: none;
 
-      @media (max-width: $breakpoint-tablet) {
+      @media (max-width: $breakpointtablet) {
         padding: 4px 0;
       }
 
-      @media (min-width: $breakpoint-tablet) {
+      @media (min-width: $breakpointtablet) {
         float: right;
         padding: 10px 0;
       }
@@ -47,7 +47,7 @@ header {
           font-style: normal;
         }
 
-        @media (max-width: $breakpoint-tablet) {
+        @media (max-width: $breakpointtablet) {
           & {
             flex: 0 0 50%;
 
@@ -65,7 +65,7 @@ header {
           }
         }
 
-        @media (min-width: $breakpoint-tablet) {
+        @media (min-width: $breakpointtablet) {
           & span {
             font-size: 12px;
           }
@@ -86,7 +86,7 @@ header {
     display: block;
     position: relative;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpointtablet) {
       margin: 20px 0;
     }
 
@@ -98,7 +98,7 @@ header {
         display: none;
       }
 
-      @media (max-width: $breakpoint-tablet) {
+      @media (max-width: $breakpointtablet) {
         & .navbar-header {
           float: right;
           display: block;
@@ -121,7 +121,7 @@ header {
         flex: 0 0 26%;
         // padding: 16px 0 0 0;
 
-        @media (max-width: $breakpoint-tablet) {
+        @media (max-width: $breakpointtablet) {
           flex: 0 0 90%;
           padding: 15px 0;
           height: 32px;
@@ -137,7 +137,7 @@ header {
     & .navMenu {
       flex: 1;
 
-      @media (max-width: $breakpoint-tablet) {
+      @media (max-width: $breakpointtablet) {
         & .navigation {
           display: none;
           margin: 0;
@@ -187,7 +187,7 @@ header {
         }
       }
 
-      @media (min-width: $breakpoint-tablet) {
+      @media (min-width: $breakpointtablet) {
         & .navigation {
           margin: 0;
           padding: 0;

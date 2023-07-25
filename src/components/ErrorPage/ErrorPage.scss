@@ -1,0 +1,14 @@
+.error-page {
+  display: block;
+  text-align: center;
+
+  & h1 {
+    display: block;
+    margin: 100px 0;
+  }
+
+  & p {
+    display: block;
+    margin: 50px 0;
+  }
+}
